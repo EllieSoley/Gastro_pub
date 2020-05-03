@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gastro pub</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/0d7923cb2b.js" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="gastro%20pub.css">
+    </head>
+    <body class="justify">
+            <nav>      
+          <div class="center top-sidebar padding-small fixed">
+              <img src="photos/bateau.JPG" alt="bateau ivre" id="bateau" style="width: 3%; height: 3%;">
+                <a href="#" class="make-smaller button medium medium-margin orange">Home</a>
+                <a href="#menu" class="make-smaller button medium medium-margin orange">Menu</a>
+                <a href="contacts" class="make-smaller button medium medium-margin orange">Contacts</a>
+                <i class="fab fa-facebook orange xlarge cursor"></i>
+                <i class="fab fa-instagram orange xlarge cursor"></i>
+                <a href="#book" class="make-small button padding-18 raspberry medium medium-margin border-radius">Book a table</a>
+          </div>
+            </nav>
+        <!-- Block 1 with a background-image-->
+        <div class="background-image">
+            <!-- Navbar-->
+
+            <!-- Heading-->
+            <div class="text-container">
+                <header id="home"><h1 class="wide justify-content">Atmospheric <span class="hide-small">gastro-pub </span></h1>
+                <h2 class="resto-name wide justify-content">«Bateau ivre»</h2>    
+            </header>
+                </div>
+        </div>
+        <!-- Description-->
+        
+            <div class="row-container container content"> <!--container content-->
+                <div class="main-header col-1"> <!--col-1-->
+                <p>Welcome aboard, stranger!
+                    We offer a cozy shelter, high-quality spirits and  delicious meals.
+                    With friends, family or on your own - here you are always at home.</p>
+ <p>Get into the spirit of <span style="font-family:Brush Script MT; font-size: 25px; letter-spacing:1px;"> Bateau ivre</span>!</p>
+                </div>
+                <div class="right-header padding-small left-bar col-2">The best place ever for good talks among friends or with your close companion. 
+                </div> <!--col-2-->
+                </div>
+            <!--End description-->
+            <br>
+             <hr class="hr-grey">
+            <!--Menu container-->
+            <div class="row-container container">
+                <div class="menu-content">
+                    <h3 class="xxlarge wide">Menu</h3>
+                    <div class="row center shadow">
+        
+                       
+        <input class="accordion" id="Meals" type="radio" name="accordion">
+        <input class="accordion" id="Drinks" type="radio" name="accordion">
+
+        <header>
+            <label for="Meals" style="padding: 8px 32px" class="col-meals">
+                Meals
+            </label>
+            <label for="Drinks" style="padding: 8px 32px" class="col-drinks">
+                Drinks
+            </label>
+        </header>
+         <main>
+            <ul>
+                <li class="bold wide padding-24 margin-top">Starters</li>
+                <li>Beef-and-Lamb Burgers with Cheddar</li>
+                <li>Chickpea Fries</li>
+                <li>Mozzarella sticks</li>
+                <li class="bold wide padding-24">Main courses</li>
+                <li>Pork belly with apple purée</li>
+                <li>Traditional fish and chips</li>
+                <li>Roasted portobello with truffle mousse</li>
+                <li>Halibut with cobnut crust, cauliflower and cockles</li>
+                <li class="bold wide padding-24">Desserts</li>
+                <li>Sticky toffee pudding</li>
+                <li>BJ's Pizzokie</li>
+                <li>Cinnabon Cinnamon Rolls</li>
+                <li>Applebee's White Chocolate Blondies</li>
+            </ul>
+
+            <ul>
+                <li class="bold wide padding-24 margin-top">Warm drinks</li>
+                <li>Green/Black English tea</li>
+                <li>Espresso/Americano</li>
+                <li>Cappuccino</li>
+                <li>Fresh juice (orange, apple, lemon)</li>
+                <li class="bold wide padding-24">Cocktails</li>
+                <li>Apple Cider Mojitos</li>
+                <li>Touchdown Punch</li>
+                <li>Piña Colada Sangria</li>
+                <li>Giggle Juice</li>
+                <li class="bold wide padding-24">Beers</li>
+                <li>Kriek Lambic</li>
+                <li>Lindemans Cassis</li>
+                <li>Apple Cider</li>
+                <li>Guinness Original</li>
+                <li class="bold wide padding-24">Wines</li>
+                <li>Red wine</li>
+                <li>White wine</li>
+                <li>Rosé</li>
+            </ul>
+        </main>
+       </div>
+                </div>
+            </div><!-- End menu container-->
+             <!-- Reservation input-->
+                 <h3 class="xxlarge wide">Reserve a table</h3>
+                 
+    <fieldset>
+        <legend><b>Online booking:</b></legend>
+            <div class="image-container"><img id="img" src="photos/photo_2020-03-23_08-56-41.jpg" alt="table"></div>
+         <div class="input-flex"><div class="input-container"><input type="text" name="Name" value="Your name" placeholder="Your name" autofocus required class="input">
+    <br />
+       <input id="number" type="text" name="Name" value="" placeholder="Your phone number" required class="input">
+    <br>
+    
+    <input type="date" name="Name" value="2020-03-23" required class="input">
+
+    <br>
+    
+    <input type="time" name="Name" value="00:00:00" required class="input">
+    <br>
+    
+    <input type="text" name="Name" value="Number of guests" placeholder="Number of guests" required class="input">
+      <br>
+      <button id="button2" onclick="myFunction()" class="make-small button padding-16 medium light-orange small-margin-top border-radius-alt">Book a table</button></div>
+      
+       <script>
+           "use strict";
+           function myFunction() {
+              var x = document.getElementById("number").value;
+              var y = x.replace(/[^\d]/g, "");
+              var z = Number(y);
+              if (!y.length || isNaN(z)) {
+                  window.alert(x + " is not a valid number");
+              }
+              else
+                  window.alert('Phone number is ' + z);
+              /*
+              try {
+                  if (x=== "") throw "empty";
+                  if (isNaN(x)) throw "Please fill the second field with a number";
+                  x = Number(x);
+                  if (x.length<11) throw "Please provide a full phone number";
+              }
+              catch(err) {
+                  message.innerHTML = "" + err;
+              }  
+               */  
+          }
+          </script>
+
+         </div>
+    </fieldset>
+    <br>     
+    <br>
+    <!--Contact section-->
+    <div>
+        <h3 class="xxlarge wide">Where we are docked</h3>
+        <br>
+        <br>
+        <div id="contacts">
+            <p>Saint Petersburg, Malookhtinskaya embankment, 7</p>
+        </div>
+        <br>
+        <br>
+    <img src="photos/P_20180611_020326.jpg" alt="Spb" id="spb">
+    <br>
+    </div>
+    <br>
+   <hr class="hr-grey"> 
+   <!--End contacts sections-->
+   <!--Footer-->
+   <footer>
+  <p class="small small-margin justify designedby">Designed by 
+    <a href="https://www.linkedin.com/in/alyona-iablokova-623ab762/" target="_blank">Alionie</a> 
+  &hearts;
+     </p>
+   </footer>
+            
+        
+    </body>
+</html>
