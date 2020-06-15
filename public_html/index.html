@@ -15,10 +15,10 @@ and open the template in the editor.
     <body class="justify">
             <nav>      
           <div class="center top-sidebar padding-small fixed">
-              <img src="photos/bateau.JPG" alt="bateau ivre" id="bateau" style="width: 3%; height: 3%;">
-                <a href="#" class="make-smaller button medium medium-margin orange">Home</a>
+              <img src="photos/bateau.JPG" alt="bateau ivre" id="bateau">
+                <a href="#home" class="make-smaller button medium medium-margin orange">Home</a>
                 <a href="#menu" class="make-smaller button medium medium-margin orange">Menu</a>
-                <a href="contacts" class="make-smaller button medium medium-margin orange">Contacts</a>
+                <a href="#contacts" class="make-smaller button medium medium-margin orange">Contacts</a>
                 <i class="fab fa-facebook orange xlarge cursor"></i>
                 <i class="fab fa-instagram orange xlarge cursor"></i>
                 <a href="#book" class="make-small button padding-18 raspberry medium medium-margin border-radius">Book a table</a>
@@ -42,7 +42,7 @@ and open the template in the editor.
                 <p>Welcome aboard, stranger!
                     We offer a cozy shelter, high-quality spirits and  delicious meals.
                     With friends, family or on your own - here you are always at home.</p>
- <p>Get into the spirit of <span style="font-family:Brush Script MT; font-size: 25px; letter-spacing:1px;"> Bateau ivre</span>!</p>
+ <p>Get into the spirit of <span id="batea-ivre-style"> Bateau ivre</span>!</p>
                 </div>
                 <div class="right-header padding-small left-bar col-2">The best place ever for good talks among friends or with your close companion. 
                 </div> <!--col-2-->
@@ -51,7 +51,7 @@ and open the template in the editor.
             <br>
              <hr class="hr-grey">
             <!--Menu container-->
-            <div class="row-container container">
+            <div class="row-container container" id="menu">
                 <div class="menu-content">
                     <h3 class="xxlarge wide">Menu</h3>
                     <div class="row center shadow">
@@ -112,7 +112,7 @@ and open the template in the editor.
                 </div>
             </div><!-- End menu container-->
              <!-- Reservation input-->
-                 <h3 class="xxlarge wide">Reserve a table</h3>
+                 <h3 class="xxlarge wide" id="book">Reserve a table</h3>
                  
     <fieldset>
         <legend><b>Online booking:</b></legend>

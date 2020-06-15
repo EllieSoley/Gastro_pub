@@ -53,7 +53,7 @@ h1 {
     display: block;
     font-size: 40px;
     transform: translate(40px, -30px);
-   
+
 }
 h2 {
     margin: 0;
@@ -99,9 +99,9 @@ nav {
     line-height: 0.4;
 }
 .resto-name {
-     font-family: Brush Script MT;
-     letter-spacing: inherit;
-     font-size:  120px;     
+    font-family: Brush Script MT;
+    letter-spacing: inherit;
+    font-size:  120px;     
 }
 
 .background-image {
@@ -112,7 +112,7 @@ nav {
     width: 100%;
     background-size: cover;
     opacity: 1;
- 
+
 }
 #bateau {
     width: 3%;
@@ -129,7 +129,7 @@ nav {
     25% {left:200px; top:200px;}
     50% {left:0px; top:200px;}
     100% {left:0px; top:0px;}
-    
+
 }
 .justify {
     text-align: justify;
@@ -168,20 +168,25 @@ nav {
     font-size: 20px;
     display: table-cell;
 }
+#bateau-ivre-style {
+    font-family:Brush Script MT;
+    font-size: 25px; 
+    letter-spacing:1px;
+}
 
 .text-container:before, .text-container:after,
 .col-1:before, .col-1:after,
 .col-2:before, .col-2:after,
-.container:before, .container: after,
+.container:before, .container:after,
 .content:before, .content:after,
 .row:before, .row:after,
 .menu-container:before, .menu-container:after,
-.menu-content:before, .menu-content:after, {
+.menu-content:before, .menu-content:after {
     content: "";
     display: table;
     clear: both;
 }
- .left-bar {
+.left-bar {
     border-left: 6px solid;
     color: #8c8c8c;
 }
@@ -212,7 +217,7 @@ nav {
     padding-right: 24px;
     padding-left: 24px;
 }
- #img {
+#img {
     float: left;
     width: 50%;
     height: 30%;
@@ -234,9 +239,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
-     
+
 .fixed {
     position: fixed;
 }
@@ -273,7 +278,7 @@ nav {
 }
 
 
-   ul {
+ul {
     display: none;
     list-style-type: none;
 }
@@ -330,7 +335,7 @@ input.accordion {
     padding: 8px 32px;
     font-size: 18px;
     font-family: 'Roboto',Arial,sans-serif;
-   
+
 }
 
 
@@ -349,12 +354,12 @@ input.accordion {
     width: 100%;
     box-sizing: border-box;
     float: right;
-   
+
 }
 
 .datepicker {
-    display:table;
-    widht: 100%;
+    display: table;
+    width: 100%;
 }
 .padding-large {padding: 3.75vh 24px;}
 .padding-64 {padding-top: 20vh; padding-bottom: 20vh;}
@@ -469,15 +474,9 @@ a {
         width: 100%;
     }
     #spb {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-
-          
-}
-   
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;         
     }
-    
-
-
+}
